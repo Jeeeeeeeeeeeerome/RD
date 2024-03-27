@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philippine Government Officials Satisfaction Survey</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .radio-container input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+
+    textarea {
+      padding: 8px;
+    }
+
+    input[type="submit"] {
+      padding: 8px 16px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Philippine Government Officials Satisfaction Survey</h1>
+  <form action="#" method="post">
+    <label for="overallSatisfaction">How satisfied are you with the overall performance of Philippine government officials?</label><br>
+    <div class="radio-container">
+      <input type="radio" id="satisfactionPoor" name="overallSatisfaction" value="Poor" required>
+      <label for="satisfactionPoor">Poor</label>
+    </div>
+    <div class="radio-container">
+      <input type="radio" id="satisfactionNeutral" name="overallSatisfaction" value="Neutral">
+      <label for="satisfactionNeutral">Neutral</label>
+    </div>
+    <div class="radio-container">
+      <input type="radio" id="satisfactionSatisfied" name="overallSatisfaction" value="Satisfied">
+      <label for="satisfactionSatisfied">Satisfied</label>
+    </div>
+    <br>
+
+    <label for="responsiveness">Rate your satisfaction with the responsiveness of government officials to public concerns:</label><br>
+    <div class="radio-container">
+      <input type="radio" id="responsivenessPoor" name="responsiveness" value="Poor" required>
+      <label for="responsivenessPoor">Poor</label>
+    </div>
+    <div class="radio-container">
+      <input type="radio" id="responsivenessNeutral" name="responsiveness" value="Neutral">
+      <label for="responsivenessNeutral">Neutral</label>
+    </div>
+    <div class="radio-container">
+      <input type="radio" id="responsivenessSatisfied" name="responsiveness" value="Satisfied">
+      <label for="responsivenessSatisfied">Satisfied</label>
+    </div>
+    <br>
+
+    <label for="transparency">Are you satisfied with the transparency and accountability of Philippine government officials?</label><br>
+    <div class="radio-container">
+      <input type="radio" id="transparencyPoor" name="transparency" value="Poor" required>
+      <label for="transparencyPoor">Poor</label>
+    </div>
+    <div class="radio-container">
+      <input type="radio" id="transparencyNeutral" name="transparency" value="Neutral">
+      <label for="transparencyNeutral">Neutral</label>
+    </div>
+    <div class="radio-container">
+      <input type="radio" id="transparencySatisfied" name="transparency" value="Satisfied">
+      <label for="transparencySatisfied">Satisfied</label>
+    </div>
+    <br>
+
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4"></textarea><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
